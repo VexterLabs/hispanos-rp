@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>West Network Launcher</title>
+<link rel="icon" href="Server_ProJect.png">
+<link rel="stylesheet" type="text/css" href="Style.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+</head>
+<body>
+<div class="Shape"> 
+    <div style="height: 80%;width: 60%;margin-left: 10%;margin-top: 10%;">
+        <img src="Server_ProJect.png" height="40%">
+        <div class="ShapeStyle"></div>
+        <div style="margin-top:0%"><a style="font-size:30px;font-family: 'Montserrat', sans-serif;">Join Us Now !</a><br><br><a href="mtasa://138.201.36.186:20062" class="Button">Play</a><a href="https://discord.gg/9E8vVzHupC" class="Button">Discord</a></div>
+    </div>  
+</div>
+<div class="video-background">
+      <iframe class="videoContainer__video" height="100%" width="130%" src="https://www.youtube.com/embed/MJ7Ad0w3jGQ?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1" frameborder="0"></iframe>
+ </div>
+ </body>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-73378277-10'); </script>
+    <audio id="leson" src="music/music.ogg" autoplay="true" hidden="true" loop="true"/>
+        <script>
+    
+
+    var play = false;
+    var myAudio = document.getElementById("leson");
+    
+    myAudio.volume = 0.1;
+    
+    
+    function onKeyDown(event) {
+            switch (event.keyCode) {
+                case 32: //SpaceBar                    
+                    if (play) {
+                        myAudio.pause();
+                        play = false;
+                    } else {
+                        myAudio.play();
+                        play = true;
+                    }
+                    break;
+            }
+      return false;
+    }
+    window.addEventListener("keydown", onKeyDown, false);
+    </script>
+</body>
+</html>
