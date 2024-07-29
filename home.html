@@ -15,7 +15,13 @@
     </div>  
 </div>
 <div class="video-background">
-    <video id="leson" src="video.webm" autoplay="true" mute="true" loop="true" frameborder="0"/>
+    <video id="myVideo" width="320" height="176" autoplay="true" mute="true" loop="true" frameborder="0" controls>
+    <source src="video.webm" type="video/webm">
+        </video>
+    <script>
+let vid = document.getElementById("myVideo");
+vid.volume = 10.0;
+    </script>
  </div>
  </body>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-73378277-10'); </script>
