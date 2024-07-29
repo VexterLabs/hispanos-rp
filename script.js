@@ -15,7 +15,7 @@ document.getElementById('loginBtn').addEventListener('click', function() {
         status.textContent = 'Inicio de sesión exitoso. Redirigiendo...';
         status.style.color = 'green';
         setTimeout(() => {
-            window.location.href = 'mta://127.0.0.1:22003'; // Reemplaza con la IP y puerto de tu servidor
+            window.location.href = 'home.html'; // Reemplaza con la IP y puerto de tu servidor
         }, 2000);
     } else {
         status.textContent = 'Usuario o contraseña incorrectos.';
